@@ -1,0 +1,104 @@
+.bg-container {
+    background-image: url("https://img.freepik.com/premium-photo/sunset-palms-beckon-serene-tropical-paradise_38013-42977.jpg?w=826");
+    background-size: cover;
+    height: 100vh;
+}
+
+.TOURISM-card {
+    background-color: white;
+    text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.main-heading {
+    font-family: "Playfair display SC";
+    padding: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #9e6f41;
+}
+
+.paragraph {
+    font-family: "Caveat";
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0px;
+    color: #635d57;
+}
+
+.background-image {
+    background-image: url("https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 100VH;
+    background-size: cover;
+}
+
+.background-image-heading {
+    font-family: "playfair display";
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-bottom: 25px;
+}
+
+.search-place-card-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 14px;
+    margin: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.search-place-card-heading {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+}
+
+.search-place-card-descroption {
+    font-size: 14px;
+    font-family: "Roboto";
+}
+
+.search-place-card-container-photo {
+    height: 110px;
+    width: 85px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.detailed-view-card-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/seabg.png");
+    background-size: cover;
+    height: 100vh;
+}
+
+.detailed-view-card-heaading {
+    color: #def5fc;
+    font-family: "Roboto";
+    font-size: 30px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.detailed-view-card-description {
+    background-color: white;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    margin: 14px;
+}
+
+.detailed-view-card-description-heaing {
+    font-family: "roboto";
+    font-size: 25px;
+    font-weight: bold;
+    color: #414142;
+}
+
+.detailed-view-card-description-paragraph {
+    color: #797a7a;
+    font-size: 12px;
+    font-family: "roboto";
+}
