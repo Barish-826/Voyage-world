@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="sectionhome">
+        <div class="bg-container d-flex flex-column justify-content-end ">
+            <div class="TOURISM-card">
+                <h1 class="main-heading">TOURISM</h1>
+                <P class="paragraph">Plane wherevre you want to go</P>
+                <button class="btn btn-outline-secondary" onclick="display('sectionfavoriteplaces')">Explore Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="sectionfavoriteplaces">
+        <div class="background-image">
+            <h1 class="background-image-heading">Loved Places</h1>
+
+            <div class="search-place-card-container d-flex flex-row" onclick="display('sectiondetailedviewtajmahal')">
+                <div>
+                    <h1 class="search-place-card-heading">TAJ MAHAL</h1>
+                    <p class="search-place-card-descroption">The Taj Mahal, a white marble mausoleum in Agra, India, was built by Emperor Shah Jahan in memory of his wife Mumtaz Maḥal.</p>
+                </div>
+                <img src="https://images.pexels.com/photos/2413613/pexels-photo-2413613.jpeg" class="search-place-card-container-photo" />
+            </div>
+
+            <div class="search-place-card-container d-flex flex-row" onclick="display('sectiondetailedviewhawamahal')">
+                <div>
+                    <h1 class="search-place-card-heading">HAWA MAHAL</h1>
+                    <p class="search-place-card-descroption">The Taj Mahal, a white marble mausoleum in Agra, India, was built by Emperor Shah Jahan in memory of his wife Mumtaz Maḥal.</p>
+                </div>
+                <img src="https://img.freepik.com/premium-photo/low-angle-view-building-against-sky-hawa-mahal_1048944-23089334.jpg" class="search-place-card-container-photo" />
+            </div>
+
+            <div class="search-place-card-container d-flex flex-row" onclick="display('sectiondetailedviwechillikalake')">
+                <div>
+                    <h1 class="search-place-card-heading">CHILLKA LAKE</h1>
+                    <p class="search-place-card-descroption">The Taj Mahal, a white marble mausoleum in Agra, India, was built by Emperor Shah Jahan in memory of his wife Mumtaz Maḥal.</p>
+                </div>
+                <img src="https://img.freepik.com/premium-photo/scenic-view-sea-against-sky-sunset_1048944-28077574.jpg" class="search-place-card-container-photo" />
+            </div>
+
+            <div class="search-place-card-container d-flex flex-row" onclick="display('sectiondetailedviwejagannathtemple')">
+                <div>
+                    <h1 class="search-place-card-heading">JAGANNATH TEMPLE</h1>
+                    <p class="search-place-card-descroption">The Taj Mahal, a white marble mausoleum in Agra, India, was built by Emperor Shah Jahan in memory of his wife Mumtaz Maḥal.</p>
+                </div>
+                <img src="https://img.freepik.com/premium-photo/devotees-offering-milk-honey-background_987764-185295.jpg" class="search-place-card-container-photo" />
+            </div>
+
+        </div>
+        <button class="btn btn-primary" onclick="display('sectionhome')"> back</button>
+    </div>
+
+    <div class="detailed-view-card-container" id="sectiondetailedviewtajmahal">
+        <h1 class="detailed-view-card-heaading">Detailed View</h1>
+        <div class="detailed-view-card-description">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://img.freepik.com/free-photo/indian-travel-destination-beautiful-attractive_53876-14146.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/beautiful-vertical-shot-taj-mahal-building-agra-india-clear-sky_181624-21517.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/views-entrance-indian-temple_119635-5.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <h1 class="detailed-view-card-description-heaing"> TAJ MAHAL</h1>
+            <p class="detailed-view-card-description-paragraph">The Taj Mahal
+                is an iconic masterpiece of architecture and enduring love.
+                Located on the southern bank of the Yamuna River in Agra,
+                India, it was built by the Mughal emperor Shah Jahan between
+                1631 and 1648. This immense mausoleum, constructed in pure-white
+                marble, stands as a testament to human creativity and devotion.
+                Shah Jahan commissioned it in memory of his beloved wife, Mumtāz Maḥal,
+                who passed away in 1631. The Taj Mahal’s exquisite beauty, with its
+                symmetrical design, intricate inlay work, and stunning domes, has
+                earned it a place as one of the universally admired masterpieces
+                of the world’s heritage1. 🕌✨</p>
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionhome')">back to home</button>
+        <button class="btn btn-primary" onclick="display('sectionfavoriteplaces')">back</button>
+    </div>
+
+    <div class="detailed-view-card-container" id="sectiondetailedviewhawamahal">
+        <h1 class="detailed-view-card-heaading">Detailed View</h1>
+        <div class="detailed-view-card-description">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://img.freepik.com/free-photo/hawa-mahal-palace-jaipur-india_53876-31311.jpg?ga=GA1.1.776335587.1721196618&semt=sph" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/udaipur-city-view-from-hotel-balcony-rajasthan-india_53876-65505.jpg?ga=GA1.1.776335587.1721196618&semt=sph" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/premium-photo/hawa-mahal-palace-jaipur-india-s-famous-sight_400112-261.jpg?ga=GA1.1.776335587.1721196618&semt=sph" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <h1 class="detailed-view-card-description-heaing"> HAWA MAHAL</h1>
+            <p class="detailed-view-card-description-paragraph">🏰 Hawa Mahal,
+                the “Palace of Winds,” graces Jaipur with its delicate beauty.
+                Crafted from pink and red sandstone, it boasts 953 intricately
+                carved windows. These jharokhas allowed royal ladies to observe
+                the world outside while remaining hidden. A Mughal-Rajput fusion,
+                it stands tall—a whispered tale etched in stone. 🌟</p>
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionhome')">back to home</button>
+        <button class="btn btn-primary" onclick="display('sectionfavoriteplaces')">back</button>
+    </div>
+
+    <div class="detailed-view-card-container" id="sectiondetailedviwechillikalake">
+        <h1 class="detailed-view-card-heaading">Detailed View</h1>
+        <div class="detailed-view-card-description">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://img.freepik.com/free-photo/japan-lake-mountains-landscape_1150-11158.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/old-fishing-boat-river-with-breathtaking-view-sunset_181624-14111.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/premium-photo/boat-moored-lake-against-sky-sunset_1048944-2078282.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <h1 class="detailed-view-card-description-heaing"> CHILIKA LAKE</h1>
+            <p class="detailed-view-card-description-paragraph">Chilika Lake
+                is the largest brackish water lagoon in Asia and second largest
+                coastal lagoon in the world, spread over the Puri, Khordha and
+                Ganjam districts of Odisha state on the east coast of India, at
+                the mouth of the Daya River, flowing into the Bay of Bengal,
+                covering an area of over 1,100 square kilometres (420 sq mi).
+                Chilika Lake comes after the New Caledonian barrier reef.
+                It has been listed as a tentative UNESCO World Heritage
+                site. Its salinity varies by region, from freshwater where
+                rivers flow in, to oceanic salinity levels due to tidal influx.</p>
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionhome')">back to home</button>
+        <button class="btn btn-primary" onclick="display('sectionfavoriteplaces')">back</button>
+    </div>
+
+    <div class="detailed-view-card-container" id="sectiondetailedviwejagannathtemple">
+        <h1 class="detailed-view-card-heaading">Detailed View</h1>
+        <div class="detailed-view-card-description">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://img.freepik.com/free-photo/japan-lake-mountains-landscape_1150-11158.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/free-photo/old-fishing-boat-river-with-breathtaking-view-sunset_181624-14111.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://img.freepik.com/premium-photo/boat-moored-lake-against-sky-sunset_1048944-2078282.jpg" class="d-block w-100" alt="..." />
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <h1 class="detailed-view-card-description-heaing"> JAGANNATH TEMPLE</h1>
+            <p class="detailed-view-card-description-paragraph">Jagannath Puri, located in Odisha, India, is renowned for the Jagannath Temple, a significant Hindu pilgrimage site dedicated to Lord Jagannath, a form of Vishnu. The temple, built in the 12th century by King Indradyumna, is famous for its annual Rath Yatra festival, where deities are paraded on grand chariots. The temple’s unique wooden idols are ceremoniously replaced every 12 to 19 years. Puri is also one of the Char Dham pilgrimage.</p>
+        </div>
+        <button class="btn btn-dark" onclick="display('sectionhome')">back to home</button>
+        <button class="btn btn-primary" onclick="display('sectionfavoriteplaces')">back</button>
+    </div>
+
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
